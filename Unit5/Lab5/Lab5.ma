@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Lab3.ma
-//Last modified: Sat, Sep 28, 2024 10:41:02 PM
+//Name: Lab5.ma
+//Last modified: Sat, Sep 28, 2024 10:43:23 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "ABEA4B71-4274-715A-FF89-F688FB3EBC9E";
+fileInfo "UUID" "76170C11-4120-346E-3D5B-95BDBAD8C59D";
 createNode transform -s -n "persp";
 	rename -uid "1D3228DF-40D1-2807-CD61-FEB5475359A9";
 	setAttr ".v" no;
@@ -7090,7 +7090,7 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "63E4F476-4DB7-5F80-11BB-8A968E841E65";
 	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "5.4.2.1";
-	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=cameraShape1;Snapshots Folder=C:/Users/Thalia/OneDrive/Desktop/DAGV12000_02/DAGV1200/Unit2/images/snapshots/Lab3;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=cameraShape1;Snapshots Folder=C:/Users/Thalia/OneDrive/Desktop/DAGV12000_02/DAGV1200/Unit2/images/snapshots/Lab5;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "BE94EA40-4E4A-91D5-8143-859E25FBDB4D";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
@@ -10097,7 +10097,7 @@ createNode aiPhysicalSky -n "aiPhysicalSky1";
 	setAttr ".sun_tint" -type "float3" 0.39300001 0.96313488 1 ;
 	setAttr ".intensity" 2.0193877220153809;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "27B9905A-4FB1-8875-AE64-26B86C01A43F";
+	rename -uid "25261D7D-47E3-8BDF-A5FB-63877B0600E6";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -1066.6974456699631 -1085.2211003507584 ;
 	setAttr ".tgi[0].vh" -type "double2" 109.07689503383511 121.99105694939801 ;
@@ -11425,4 +11425,4 @@ connectAttr "groupId144.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId147.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId154.msg" ":initialShadingGroup.gn" -na;
 connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
-// End of Lab3.ma
+// End of Lab5.ma
