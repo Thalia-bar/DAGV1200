@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge5.ma
-//Last modified: Sun, Sep 29, 2024 09:00:49 PM
+//Last modified: Sun, Sep 29, 2024 09:02:26 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,19 +13,19 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "32BDF96D-4299-266E-639F-5198A3D8754A";
+fileInfo "UUID" "79005000-4864-46B6-2A50-E8B9DBAA8FD1";
 createNode transform -s -n "persp";
 	rename -uid "1D3228DF-40D1-2807-CD61-FEB5475359A9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.03328715514368 1.1175599175267252 1.8014659956968959 ;
-	setAttr ".r" -type "double3" -15.533356176460266 34.69486884676882 -9.6709254028877855e-16 ;
+	setAttr ".t" -type "double3" 1.7275653051842155 1.8903610273116331 3.0952852049749744 ;
+	setAttr ".r" -type "double3" -20.333356176460654 32.294868846768907 -9.4064777132503173e-16 ;
 	setAttr ".rp" -type "double3" 2.7755575615628914e-17 2.2204460492503131e-16 0 ;
 	setAttr ".rpt" -type "double3" 1.8122901485928562e-16 -7.7595517293481517e-15 5.1015704117145526e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "28C922D5-462F-2106-35A2-B08ADD992C8E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 2.5870471278739808;
+	setAttr ".coi" 4.2178077008910178;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -26562,6 +26562,14 @@ createNode transform -n "spotLight1";
 createNode spotLight -n "spotLightShape1" -p "spotLight1";
 	rename -uid "506722F5-4B8C-D0E9-95BB-04AFAC87B657";
 	setAttr -k off ".v";
+createNode transform -n "areaLight1";
+	rename -uid "C8ACC3C6-4392-BFCE-BE0F-37A10F5EFEDA";
+	setAttr ".t" -type "double3" 0 0.97689500044584798 -0.095048493964543956 ;
+	setAttr ".r" -type "double3" 90 0 0 ;
+	setAttr ".s" -type "double3" 0.49625851602312876 0.49625851602312876 0.49625851602312876 ;
+createNode areaLight -n "areaLightShape1" -p "areaLight1";
+	rename -uid "F9EF7944-4504-E1EC-B26D-7FA399B9A509";
+	setAttr -k off ".v";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "83B7A480-46F3-6651-0AD6-29B04C419A25";
 	setAttr -s 21 ".lnk";
@@ -27157,7 +27165,7 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :lightList1;
-	setAttr -s 3 ".l";
+	setAttr -s 4 ".l";
 select -ne :lambert1;
 	setAttr ".ic" -type "float3" 0.057142857 0.057142857 0.057142857 ;
 select -ne :standardSurface1;
@@ -27178,7 +27186,7 @@ select -ne :defaultRenderGlobals;
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :defaultLightSet;
-	setAttr -s 3 ".dsm";
+	setAttr -s 4 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -27589,6 +27597,7 @@ connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "aiSkyDomeLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "pointLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "spotLightShape1.ltd" ":lightList1.l" -na;
+connectAttr "areaLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "pCube25Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pCube25Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "Book01Shape.iog.og[1]" ":initialShadingGroup.dsm" -na;
@@ -27600,4 +27609,5 @@ connectAttr "groupId191.msg" ":initialShadingGroup.gn" -na;
 connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "spotLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "areaLight1.iog" ":defaultLightSet.dsm" -na;
 // End of Challenge5.ma
