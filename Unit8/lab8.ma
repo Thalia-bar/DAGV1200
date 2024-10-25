@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: lab8.ma
-//Last modified: Fri, Oct 25, 2024 02:32:58 PM
+//Last modified: Fri, Oct 25, 2024 02:37:12 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,24 +13,25 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "678AF810-432D-6B73-FC49-4D8249C7F3F5";
+fileInfo "UUID" "ADBF2264-4822-BFFE-5FD5-D496725DD666";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 16.732335255993569 10.476477355732875 6.605134185389903 ;
-	setAttr ".r" -type "double3" -21.01599253775289 76.655656474730776 -2.2737653398898575e-13 ;
-	setAttr ".rpt" -type "double3" 2.1080989203100718e-14 1.4642697946630529e-14 -1.9981226699217097e-14 ;
+	setAttr ".t" -type "double3" 7.0356811647112565 7.6447471378543597 11.6397589493876 ;
+	setAttr ".r" -type "double3" -25.298188316010251 41.324240536550491 -1.6940713232972151e-14 ;
+	setAttr ".rp" -type "double3" 8.8817841970012523e-16 0 -3.5527136788005009e-15 ;
+	setAttr ".rpt" -type "double3" 1.9056462404498993e-14 1.3180634520355145e-14 -1.9056940068266841e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD610852-46B8-AB89-7337-01BCE1D0C7ED";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 22.909198415624807;
+	setAttr ".coi" 17.901395889188549;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -4.0755602944046423 2.2605854604015931 1.6693490224787855 ;
+	setAttr ".tp" -type "double3" -4.3951782671918629 1.9869429605327458 -1.1142845988123771 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "5880BC5A-4D6C-7FCC-C389-3D879AE540A8";
@@ -126139,7 +126140,7 @@ createNode mesh -n "TrunkBranchesShape" -p "TrunkBranches";
 	setAttr ".gtag[8].gtagcmp" -type "componentList" 1 "f[40:487]";
 	setAttr ".gtag[9].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[9].gtagcmp" -type "componentList" 1 "e[20:39]";
-	setAttr ".pv" -type "double2" 0.51492053270339966 0.84374997019767761 ;
+	setAttr ".pv" -type "double2" 0.515625 0.1600736677646637 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 732 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.64860266 0.10796607 0.62640899
@@ -126262,15 +126263,15 @@ createNode mesh -n "TrunkBranchesShape" -p "TrunkBranches";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 470 ".pt";
-	setAttr ".pt[0:165]" -type "float3"  0.048092868 0.011078213 -0.76486218 
-		0.047923546 0.011078213 -0.77105105 0.044898305 0.011078213 -0.77750707 0.039563995 
-		0.011078213 -0.78971261 0.03478229 0.011078213 -0.79366535 0.029812094 0.011078213 
+	setAttr ".pt[0:165]" -type "float3"  0.048092868 -0.17131545 -0.76486218 
+		0.047923546 -0.17131545 -0.77105105 0.044898305 -0.17131545 -0.77750707 0.039563995 
+		-0.17131545 -0.78971261 0.03478229 0.011078213 -0.79366535 0.029812094 0.011078213 
 		-0.79493248 0.023088586 0.011078213 -0.79412812 0.011096266 0.011078213 -0.79177386 
 		0.0024451329 0.011078213 -0.78435075 -0.0022047174 0.011078213 -0.76285344 5.6370725e-05 
 		0.011078213 -0.75336522 0.0060963905 0.011078213 -0.74603802 0.01377501 0.011078213 
 		-0.74029613 0.021315351 0.011078213 -0.7344628 0.027702117 0.011078213 -0.73255903 
 		0.03313861 0.011078213 -0.73261523 0.042412959 0.011078213 -0.73793399 0.045608737 
-		0.011078213 -0.74350411 0.048803784 0.011078213 -0.75102812 0.048204921 0.011078213 
+		0.011078213 -0.74350411 0.048803784 -0.17131545 -0.75102812 0.048204921 -0.17131545 
 		-0.7577433 0.043271299 0.025881471 -0.76697123 0.042271677 0.025881471 -0.77361113 
 		0.040240947 0.025881471 -0.77894402 0.035013769 0.025881471 -0.78289407 0.029671837 
 		0.025881471 -0.78482389 0.02017417 0.025881471 -0.7856012 0.010395705 0.025881471 
@@ -158698,7 +158699,7 @@ createNode aiPhysicalSky -n "aiPhysicalSky1";
 	setAttr ".azimuth" 124.89795684814453;
 	setAttr ".sun_size" 4.8000001907348633;
 	setAttr ".sun_tint" -type "float3" 1 0.68933499 0.255 ;
-	setAttr ".sky_tint" -type "float3" 0.027819999 0.030836128 0.214 ;
+	setAttr ".sky_tint" -type "float3" 0.01833 0.020317262 0.141 ;
 	setAttr ".intensity" 2.7770407199859619;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "E9CE7FEA-4DF0-98AF-E6A3-828ACF7837DC";
