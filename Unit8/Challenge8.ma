@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: lab8.ma
-//Last modified: Sat, Oct 26, 2024 06:43:08 PM
+//Name: Challenge8.ma
+//Last modified: Sat, Oct 26, 2024 06:46:02 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "3567C0E8-4467-39EF-8F3D-E5B70CC047D7";
+fileInfo "UUID" "AFF4901B-4F67-7AE4-4922-4790AB1054B0";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
@@ -159093,4 +159093,4 @@ connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "|LampLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "BenchLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "areaLight1.iog" ":defaultLightSet.dsm" -na;
-// End of lab8.ma
+// End of Challenge8.ma
