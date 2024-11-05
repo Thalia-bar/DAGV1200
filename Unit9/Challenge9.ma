@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge9.ma
-//Last modified: Tue, Nov 05, 2024 02:40:43 PM
+//Last modified: Tue, Nov 05, 2024 02:58:04 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,25 +13,25 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "6FD0E610-40EF-2001-78D8-EC80CE49F9BA";
+fileInfo "UUID" "6D3FE14D-448D-6C8C-B9C5-A48043A0FD71";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.449710587910397 7.3748108736814446 11.226158985436218 ;
-	setAttr ".r" -type "double3" -28.262492136497261 19.630550907255614 1.0130462194914972e-14 ;
-	setAttr ".rp" -type "double3" -8.8817841970012523e-16 -1.1102230246251565e-16 -1.7763568394002505e-15 ;
-	setAttr ".rpt" -type "double3" -7.6570370265389771e-16 2.074315926117056e-14 -1.8010987794523691e-13 ;
+	setAttr ".t" -type "double3" -18.361523233478223 5.8577513872244493 3.2450500200901446 ;
+	setAttr ".r" -type "double3" -4.3166771508971591 -79.71302105243177 2.2485616994769977e-13 ;
+	setAttr ".rp" -type "double3" -1.5265566588595902e-16 0 0 ;
+	setAttr ".rpt" -type "double3" -2.1313538414710441e-16 2.0149436477845465e-14 -1.8242973648772259e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD610852-46B8-AB89-7337-01BCE1D0C7ED";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 21.089656225668495;
+	setAttr ".coi" 23.212613678018457;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 4.2091980129528581 -2.6113884267902243 -6.2697098426597364 ;
+	setAttr ".tp" -type "double3" 4.4131731815795874 4.1105617367125893 -0.8884672826470883 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "5880BC5A-4D6C-7FCC-C389-3D879AE540A8";
@@ -127365,7 +127365,7 @@ createNode mesh -n "TrunkBranchesShape" -p "TrunkBranches";
 	setAttr ".gtag[8].gtagcmp" -type "componentList" 1 "f[40:487]";
 	setAttr ".gtag[9].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[9].gtagcmp" -type "componentList" 1 "e[20:39]";
-	setAttr ".pv" -type "double2" 0.515625 0.1600736677646637 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 732 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.64860266 0.10796607 0.62640899
