@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: lab8.ma
-//Last modified: Tue, Nov 05, 2024 12:33:47 PM
+//Name: lab9.ma
+//Last modified: Tue, Nov 05, 2024 12:53:02 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,25 +13,25 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "AE71A50B-46C5-275D-F461-7CB13E413D73";
+fileInfo "UUID" "6764D661-4F3B-4429-E7C3-73A14CC15C87";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.1969777475767671 6.7514712347313379 5.7560639218979226 ;
-	setAttr ".r" -type "double3" -39.006140716882108 42.438579737519298 1.939359624971709e-14 ;
-	setAttr ".rp" -type "double3" -8.8817841970012523e-16 -1.0824674490095276e-15 7.1054273576010019e-15 ;
-	setAttr ".rpt" -type "double3" 1.878205807203268e-14 2.2197294803427806e-14 -2.592609123081864e-14 ;
+	setAttr ".t" -type "double3" 3.8692790774655537 3.633956438687699 3.5030819105829694 ;
+	setAttr ".r" -type "double3" -15.415904801726253 47.469519409056453 -1.5526782173696649e-13 ;
+	setAttr ".rp" -type "double3" 2.7755575615628914e-17 4.4408920985006262e-16 0 ;
+	setAttr ".rpt" -type "double3" 1.4741962574387216e-14 1.6803599321626124e-14 -2.4364632800392432e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD610852-46B8-AB89-7337-01BCE1D0C7ED";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 20.904051343525218;
+	setAttr ".coi" 6.6205494952616917;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -4.7645249154333182 -6.405615578934162 -6.2320922548971875 ;
+	setAttr ".tp" -type "double3" -0.83399067050779596 1.8740572665443764 -0.81127600235121378 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "5880BC5A-4D6C-7FCC-C389-3D879AE540A8";
@@ -13686,10 +13686,10 @@ createNode transform -n "BenchWood03" -p "Bench";
 createNode mesh -n "BenchWoodShape3" -p "BenchWood03";
 	rename -uid "5266B070-434B-800B-1CA0-06828E0F35AD";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
+	setAttr -s 5 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr -s 3 ".ciog[0].cog";
+	setAttr -s 5 ".ciog[0].cog";
 	setAttr -s 6 ".gtag";
 	setAttr ".gtag[0].gtagnm" -type "string" "back";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 4 "f[8]" "f[10:11]" "f[14]" "f[24:25]";
@@ -13703,6 +13703,7 @@ createNode mesh -n "BenchWoodShape3" -p "BenchWood03";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[16]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 5 "f[5]" "f[7]" "f[9]" "f[13]" "f[22:23]";
+	setAttr ".pv" -type "double2" 0.59752655029296875 0.37500128149986267 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 38 ".uvst[0].uvsp[0:37]" -type "float2" 0.40247437 0.99781364
 		 0.375 0.99781364 0.375 0.75218892 0.40247434 1.4901161e-08 0.40247434 0.062493742
@@ -159093,4 +159094,4 @@ connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "|LampLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "BenchLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "areaLight1.iog" ":defaultLightSet.dsm" -na;
-// End of lab8.ma
+// End of lab9.ma
