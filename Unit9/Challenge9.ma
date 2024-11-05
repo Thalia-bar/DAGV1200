@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge9.ma
-//Last modified: Tue, Nov 05, 2024 02:38:05 PM
+//Last modified: Tue, Nov 05, 2024 02:40:43 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,25 +13,25 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "19FB338D-496E-9F0B-A110-91979A0271BC";
+fileInfo "UUID" "6FD0E610-40EF-2001-78D8-EC80CE49F9BA";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.110126141363667 8.0674536521906042 8.7535920685261495 ;
-	setAttr ".r" -type "double3" -25.693174669542863 47.160054577205102 -5.3792535714301201e-14 ;
-	setAttr ".rp" -type "double3" 4.4408920985006262e-16 -4.4408920985006262e-16 1.7763568394002505e-15 ;
-	setAttr ".rpt" -type "double3" 9.2176429664589185e-16 2.2799220497849388e-14 -1.824753711752128e-13 ;
+	setAttr ".t" -type "double3" 10.449710587910397 7.3748108736814446 11.226158985436218 ;
+	setAttr ".r" -type "double3" -28.262492136497261 19.630550907255614 1.0130462194914972e-14 ;
+	setAttr ".rp" -type "double3" -8.8817841970012523e-16 -1.1102230246251565e-16 -1.7763568394002505e-15 ;
+	setAttr ".rpt" -type "double3" -7.6570370265389771e-16 2.074315926117056e-14 -1.8010987794523691e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD610852-46B8-AB89-7337-01BCE1D0C7ED";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 16.585726129932794;
+	setAttr ".coi" 21.089656225668495;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.15097488616403787 0.87668320997092408 -1.4088946089605621 ;
+	setAttr ".tp" -type "double3" 4.2091980129528581 -2.6113884267902243 -6.2697098426597364 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "5880BC5A-4D6C-7FCC-C389-3D879AE540A8";
@@ -151986,6 +151986,20 @@ createNode transform -n "Paver05" -p "PaverRow05";
 createNode mesh -n "PaverShape5" -p "|Bricks|PaverRow05|Paver05";
 	rename -uid "B028E438-4D2E-E664-0ECF-9A80D7AB53E9";
 	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.24417988955974579 0.67571714520454407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape8" -p "|Bricks|PaverRow05|Paver05";
+	rename -uid "1F9A19DC-4B72-B61A-2843-F1AC8F7FBCB5";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:97]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 6 ".gtag";
@@ -152001,7 +152015,7 @@ createNode mesh -n "PaverShape5" -p "|Bricks|PaverRow05|Paver05";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 9 "f[9]" "f[14]" "f[23]" "f[32]" "f[40]" "f[51]" "f[63]" "f[77]" "f[91]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 8 "f[16:18]" "f[21:22]" "f[28:29]" "f[37]" "f[56:57]" "f[64:65]" "f[73:76]" "f[80:83]";
-	setAttr ".pv" -type "double2" 0.5 0.625 ;
+	setAttr ".pv" -type "double2" 0.5 0.49011409282684326 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 118 ".uvst[0].uvsp[0:117]" -type "float2" 0.39477175 0.98022819
 		 0.39477175 0.037496265 0.60522819 0.98022819 0.64477181 0.037496261 0.39477175 0.21250375
@@ -159915,7 +159929,7 @@ createNode lambert -n "Bricks1";
 createNode shadingEngine -n "lambert10SG";
 	rename -uid "1FA6FA45-4A38-ECC8-CEE4-7D8E48AE330F";
 	setAttr ".ihi" 0;
-	setAttr -s 23 ".dsm";
+	setAttr -s 22 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo13";
 	rename -uid "63188B1C-4323-6343-F624-5F83ECBB3A95";
@@ -160078,6 +160092,76 @@ createNode groupId -n "groupId5";
 createNode groupId -n "groupId6";
 	rename -uid "9C5F0690-48D2-40C4-71AC-B3861DAEBAFD";
 	setAttr ".ihi" 0;
+createNode shadingEngine -n "texturedFacets1";
+	rename -uid "AF17B516-40C6-1750-DF9C-B598844B5C52";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo19";
+	rename -uid "CA26FD9C-4609-01E4-EECD-C992F830C4EF";
+createNode polyAutoProj -n "polyAutoProj2";
+	rename -uid "BF3703FC-4BA5-1814-F0DB-72A6B0BD42C8";
+	setAttr ".cch" yes;
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:97]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".s" -type "double3" 1.0000004768371582 1.0000004768371582 1.0000004768371582 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
+createNode groupId -n "groupId7";
+	rename -uid "14C06EFF-437D-73A7-F24B-13A190763E6F";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts2";
+	rename -uid "89D662A5-4C5F-5808-8F2C-37962EFA8988";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:97]";
+createNode polyMapCut -n "polyMapCut3";
+	rename -uid "BFF3D4E2-4223-614A-F51A-85B9C914287B";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 4 "e[88]" "e[93]" "e[103]" "e[118]";
+createNode polyTweakUV -n "polyTweakUV2";
+	rename -uid "D6D7BF35-4ECB-ACAC-E7FE-A5BAE946F83D";
+	setAttr ".uopa" yes;
+	setAttr -s 148 ".uvtk[0:147]" -type "float2" -0.048639148 0.43213439 -0.049560845
+		 0.43274936 -0.054550827 0.40149051 -0.053658396 0.40155172 -0.049643099 0.43370673
+		 -0.048396677 0.43340945 -0.063286006 0.43492693 -0.068275988 0.40366811 -0.055183798
+		 0.40049776 -0.053922802 0.40027115 -0.052569836 0.43066621 -0.057750374 0.40259743
+		 -0.062653065 0.43591967 -0.051992953 0.43017823 -0.05131799 0.43006682 -0.05079338
+		 0.42958406 -0.064178526 0.43486574 -0.069197774 0.40428305 -0.068193793 0.40271071
+		 -0.05674988 0.40432087 -0.057167113 0.40382883 -0.057262957 0.40317133 -0.061086953
+		 0.4320966 -0.06391412 0.43614626 -0.060086489 0.43382007 -0.065267026 0.40575123
+		 -0.069440246 0.40300795 -0.067043483 0.40683338 -0.06066978 0.43258864 -0.060573936
+		 0.43324608 -0.06584388 0.40623924 -0.066518843 0.40635058 -0.67698932 0.4049238 -0.676094
+		 0.40524662 -0.67647159 0.43579459 -0.67738611 0.43614832 -0.67736208 0.40393862 -0.67614019
+		 0.40393111 -0.68016839 0.40655458 -0.68042231 0.43458655 -0.67772901 0.43710887 -0.67644799
+		 0.43703032 -0.69109637 0.43596417 -0.69069958 0.40473968 -0.69035661 0.40377918 -0.67866963
+		 0.40778312 -0.67913371 0.40753534 -0.67943525 0.40707812 -0.68009073 0.43405044 -0.6907236
+		 0.4369494 -0.67961621 0.4337332 -0.67914206 0.4330053 -0.69161403 0.40509337 -0.69199157
+		 0.43564135 -0.69163769 0.40385768 -0.68894362 0.40788266 -0.69194543 0.43695691 -0.68941605
+		 0.43310481 -0.68766332 0.40630144 -0.68791723 0.43433338 -0.68799496 0.40683755 -0.68846947
+		 0.40715483 -0.68895191 0.43335271 -0.68865049 0.43380994 0.40020174 -0.02975446 0.40105158
+		 -0.029618382 0.40801418 0.00052817538 0.40710914 0.0013443194 0.39987895 -0.030652016
+		 0.40088788 -0.02985546 0.40748262 0.0022490947 0.408402 0.00083516911 0.37601829
+		 0.0082376823 0.36911094 -0.022861093 0.36873746 -0.023765862 0.39907062 -0.026634425
+		 0.39963058 -0.025502861 0.3763411 0.0091352528 0.40793782 -0.0034704655 0.40730965
+		 -0.0018303148 0.36820608 -0.022044986 0.37516874 0.00810159 0.36781806 -0.02235195
+		 0.36891043 -0.01968652 0.37714946 0.0051176175 0.37533218 0.0083386973 0.36828226
+		 -0.018046319 0.37658948 0.0039861002 -0.56095642 -0.45911404 -0.56186485 -0.45822743
+		 -0.5702253 -0.48935696 -0.56937593 -0.48929161 -0.56142086 -0.45732102 -0.56050581
+		 -0.45879531 -0.59298635 -0.44988096 -0.60134685 -0.4810105 -0.57061863 -0.49025598
+		 -0.56960279 -0.48951942 -0.59259307 -0.448982 -0.56089938 -0.4631027 -0.56152308
+		 -0.46140093 -0.59383553 -0.44994634 -0.60225511 -0.48012385 -0.60179079 -0.48191693
+		 -0.57149738 -0.48624176 -0.57093078 -0.48517203 -0.59171432 -0.45299616 -0.59360898
+		 -0.44971851 -0.60270596 -0.48044264 -0.60168856 -0.477837 -0.59228092 -0.45406592
+		 -0.60231233 -0.47613531 0.25867963 -0.056188285 0.25953823 -0.056032479 0.26099247
+		 -0.0254426 0.26011282 -0.02514261 0.25837249 -0.057089448 0.25915462 -0.056801319
+		 0.25994313 -0.024281591 0.26071644 -0.02466917 0.24649805 -0.024520099 0.24506485
+		 -0.055565774 0.24523455 -0.056427002 0.24680519 -0.023619145 0.24418497 -0.055265784
+		 0.24563915 -0.024675936 0.244461 -0.056039155 0.24602282 -0.023907006 0.66508871
+		 -0.49420595 0.66535676 -0.49330547 0.63901353 -0.11470121 0.65195179 -0.4938978 0.66621578
+		 -0.49311042 0.6658659 -0.49388412 0.66598445 -0.46226209 0.65237069 -0.46199274 0.65086401
+		 -0.49277526 0.65117371 -0.49354371 0.6668635 -0.46252295 0.66577566 -0.4614006 0.65263867
+		 -0.46109241 0.65151167 -0.46218777 0.66655368 -0.46175441 0.65186155 -0.46141404
+		 0.65174294 -0.49303609 0.63901353 -0.08369568 0.65260887 -0.08369568 0.65260887 -0.11470121;
 select -ne :time1;
 	setAttr ".o" 57;
 	setAttr ".unw" 57;
@@ -160089,7 +160173,7 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 20 ".st";
+	setAttr -s 21 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
 	setAttr -s 23 ".s";
@@ -160145,6 +160229,13 @@ connectAttr "groupId5.id" "BenchWoodShape10.iog.og[7].gid";
 connectAttr "texturedFacets.mwc" "BenchWoodShape10.iog.og[7].gco";
 connectAttr "groupId6.id" "BenchWoodShape11.iog.og[7].gid";
 connectAttr "texturedFacets.mwc" "BenchWoodShape11.iog.og[7].gco";
+connectAttr "groupId7.id" "|Bricks|PaverRow05|Paver05|PaverShape5.iog.og[0].gid"
+		;
+connectAttr "texturedFacets1.mwc" "|Bricks|PaverRow05|Paver05|PaverShape5.iog.og[0].gco"
+		;
+connectAttr "polyTweakUV2.out" "|Bricks|PaverRow05|Paver05|PaverShape5.i";
+connectAttr "polyTweakUV2.uvtk[0]" "|Bricks|PaverRow05|Paver05|PaverShape5.uvst[0].uvtw"
+		;
 connectAttr "aiPhysicalSky1.out" "aiSkyDomeLightShape1.sc";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -160166,6 +160257,7 @@ relationship "link" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLigh
 relationship "link" ":lightLinker1" "lambert12SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert13SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "texturedFacets.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "texturedFacets1.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
@@ -160186,6 +160278,7 @@ relationship "shadowLink" ":lightLinker1" "aiStandardSurface1SG.message" ":defau
 relationship "shadowLink" ":lightLinker1" "lambert12SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert13SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "texturedFacets.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "texturedFacets1.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
@@ -160295,7 +160388,6 @@ connectAttr "|Bricks|PaverRow03|Paver06|PaverShape6.iog" "lambert10SG.dsm" -na;
 connectAttr "|Bricks|PaverRow03|Paver07|PaverShape7.iog" "lambert10SG.dsm" -na;
 connectAttr "|Bricks|PaverRow04|Paver04|PaverShape4.iog" "lambert10SG.dsm" -na;
 connectAttr "|Bricks|PaverRow04|Paver05|PaverShape5.iog" "lambert10SG.dsm" -na;
-connectAttr "|Bricks|PaverRow05|Paver05|PaverShape5.iog" "lambert10SG.dsm" -na;
 connectAttr "|Bricks|PaverRow05|Paver07|PaverShape7.iog" "lambert10SG.dsm" -na;
 connectAttr "lambert10SG.msg" "materialInfo13.sg";
 connectAttr "Bricks1.msg" "materialInfo13.m";
@@ -160409,6 +160501,19 @@ connectAttr "polyMapCut1.out" "polyTweak1.ip";
 connectAttr "polyMapCut2.out" "polyTweakUV1.ip";
 connectAttr "polyTweakUV1.out" "deleteComponent1.ig";
 connectAttr "deleteComponent1.og" "deleteComponent2.ig";
+connectAttr "defaultPolygonShader.oc" "texturedFacets1.ss";
+connectAttr "|Bricks|PaverRow05|Paver05|PaverShape5.iog.og[0]" "texturedFacets1.dsm"
+		 -na;
+connectAttr "groupId7.msg" "texturedFacets1.gn" -na;
+connectAttr "texturedFacets1.msg" "materialInfo19.sg";
+connectAttr "defaultPolygonShader.msg" "materialInfo19.m";
+connectAttr "defaultPolygonTexture.msg" "materialInfo19.t" -na;
+connectAttr "groupParts2.og" "polyAutoProj2.ip";
+connectAttr "|Bricks|PaverRow05|Paver05|PaverShape5.wm" "polyAutoProj2.mp";
+connectAttr "polySurfaceShape8.o" "groupParts2.ig";
+connectAttr "groupId7.id" "groupParts2.gi";
+connectAttr "polyAutoProj2.out" "polyMapCut3.ip";
+connectAttr "polyMapCut3.out" "polyTweakUV2.ip";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
@@ -160427,6 +160532,7 @@ connectAttr "aiStandardSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert12SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert13SG.pa" ":renderPartition.st" -na;
 connectAttr "texturedFacets.pa" ":renderPartition.st" -na;
+connectAttr "texturedFacets1.pa" ":renderPartition.st" -na;
 connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "GrassGreen.msg" ":defaultShaderList1.s" -na;
 connectAttr "MetalBlack.msg" ":defaultShaderList1.s" -na;
