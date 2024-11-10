@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Challenge9.ma
-//Last modified: Sat, Nov 09, 2024 07:52:29 PM
+//Name: Lesson10.1.ma
+//Last modified: Sat, Nov 09, 2024 07:53:18 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "82862B9B-46B2-2587-E292-A1BCFDFFC276";
+fileInfo "UUID" "758121E3-4809-64A8-A735-8B95B584A495";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
@@ -171315,4 +171315,4 @@ connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "|LampLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "BenchLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "areaLight1.iog" ":defaultLightSet.dsm" -na;
-// End of Challenge9.ma
+// End of Lesson10.1.ma
