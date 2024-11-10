@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Lesson10.1.ma
-//Last modified: Sat, Nov 09, 2024 07:58:24 PM
+//Last modified: Sat, Nov 09, 2024 08:23:40 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "2A64B7F6-4485-D21C-406B-6AA5405B077B";
+fileInfo "UUID" "EBA04CED-434C-BF83-F674-17B31C5821AC";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
