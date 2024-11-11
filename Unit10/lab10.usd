@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    "Exported from Adobe Substance 3D Painter 10.1.1"
+    defaultPrim = "Tree"
+    subLayers = [
+        @./lab10.material.usda@
+    ]
+)
+
+def "Tree" (
+    prepend references = @./lab10.geo.usd@
+)
+{
+}
+
