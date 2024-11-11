@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge10.ma
-//Last modified: Sun, Nov 10, 2024 09:40:17 PM
+//Last modified: Sun, Nov 10, 2024 09:46:19 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "55CE7133-4364-FD54-5E00-E1BCFD75697F";
+fileInfo "UUID" "EA5C6FAD-4013-E4EC-8BF3-FC9DB0B5C9C7";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
@@ -170447,7 +170447,6 @@ createNode materialInfo -n "materialInfo7";
 createNode shadingEngine -n "lambert6SG";
 	rename -uid "BB54D2F4-4648-9463-D609-07ADBFEB842F";
 	setAttr ".ihi" 0;
-	setAttr -s 29 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo8";
 	rename -uid "D40ECC5D-447C-9BB1-2C4C-B4A2A82F5C6B";
@@ -170471,9 +170470,6 @@ createNode shadingEngine -n "lambert8SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo10";
 	rename -uid "24F0B2D8-4925-4075-59CF-9CB17427FF9A";
-createNode lambert -n "GrassY";
-	rename -uid "6A1AC65E-4FC4-A868-5666-73B4DE759E88";
-	setAttr ".c" -type "float3" 0.063674487 0.093999997 0.028293999 ;
 createNode shadingEngine -n "lambert9SG";
 	rename -uid "E569818E-4048-92B9-F039-1C8B5C4F422A";
 	setAttr ".ihi" 0;
@@ -170501,14 +170497,10 @@ createNode bump2d -n "bump2d1";
 	rename -uid "71C8FA4C-48D9-5AFE-CF77-A688342E2FC7";
 	setAttr ".bd" 4.2346940040588379;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
-createNode lambert -n "Bricks1";
-	rename -uid "9CFD5260-4ADE-64A4-B643-BFB6B1B8A933";
-	setAttr ".dc" 0.48469388484954834;
-	setAttr ".c" -type "float3" 0.359 0.34093052 0.23837601 ;
-	setAttr ".ambc" -type "float3" 0.121 0.1028742 0 ;
 createNode shadingEngine -n "lambert10SG";
 	rename -uid "1FA6FA45-4A38-ECC8-CEE4-7D8E48AE330F";
 	setAttr ".ihi" 0;
+	setAttr -s 29 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo13";
 	rename -uid "63188B1C-4323-6343-F624-5F83ECBB3A95";
@@ -170692,6 +170684,36 @@ createNode file -n "file10";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture11";
 	rename -uid "D55E8D48-4483-3896-2ABA-7086BCAF2756";
+createNode file -n "file11";
+	rename -uid "8C3CDC2B-4095-8EDF-E460-A88927D485EA";
+	setAttr ".ail" yes;
+	setAttr ".ftn" -type "string" "C:/Users/Thalia/OneDrive/Desktop/DAGV12000_02/DAGV1200/Unit10/challenge10_textures/brick_StoneGrey_Roughness.png";
+	setAttr ".cs" -type "string" "Raw";
+createNode place2dTexture -n "place2dTexture12";
+	rename -uid "5D280D81-4C7C-5D8A-E1D7-2B857C7991CA";
+createNode file -n "file12";
+	rename -uid "7109CAA6-4BF3-DC54-E34D-B09E35EE003F";
+	setAttr ".ail" yes;
+	setAttr ".ftn" -type "string" "C:/Users/Thalia/OneDrive/Desktop/DAGV12000_02/DAGV1200/Unit10/challenge10_textures/brick_StoneGrey_Metallic.png";
+	setAttr ".cs" -type "string" "Raw";
+createNode place2dTexture -n "place2dTexture13";
+	rename -uid "42B854BA-4C33-FDEE-9F00-5680AA591B49";
+createNode aiStandardSurface -n "aiStandardSurface6";
+	rename -uid "FFF8BE54-4807-A11C-0798-28A4C7299E38";
+createNode file -n "file13";
+	rename -uid "FCE074C4-42E7-9CA9-BC10-388B497D0BFA";
+	setAttr ".ftn" -type "string" "C:/Users/Thalia/OneDrive/Desktop/DAGV12000_02/DAGV1200/Unit10/challenge10_textures/brick_StoneGrey_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "place2dTexture14";
+	rename -uid "1AE14115-406B-A834-DECE-A3B5EA78AA91";
+createNode lambert -n "GrassY";
+	rename -uid "6A1AC65E-4FC4-A868-5666-73B4DE759E88";
+	setAttr ".c" -type "float3" 0.063674487 0.093999997 0.028293999 ;
+createNode file -n "file14";
+	rename -uid "99EE2D72-4543-4CB0-D1D8-B38A5A72374D";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "place2dTexture15";
+	rename -uid "50063892-41B5-292B-6A0C-9186A7B4637E";
 select -ne :time1;
 	setAttr ".o" 57;
 	setAttr ".unw" 57;
@@ -170710,12 +170732,12 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 14 ".u";
+	setAttr -s 18 ".u";
 select -ne :defaultRenderingList1;
 select -ne :lightList1;
 	setAttr -s 4 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 12 ".tx";
+	setAttr -s 16 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -170843,49 +170865,6 @@ connectAttr "|Mushroom03|ShroomStalk|ShroomStalkShape.iog" "lambert5SG.dsm" -na;
 connectAttr "lambert5SG.msg" "materialInfo7.sg";
 connectAttr "MushroomPaleYellow.msg" "materialInfo7.m";
 connectAttr "aiStandardSurface5.out" "lambert6SG.ss";
-connectAttr "|Bricks|PaverRow05|group2|Paver09|PaverShape9.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group2|Paver14|PaverShape14.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group2|Paver12|PaverShape12.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group2|Paver13|PaverShape13.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group2|Paver11|PaverShape11.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group2|Paver10|PaverShape10.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group2|Paver05|PaverShape5.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "PaverShape32.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape31.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape30.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape29.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape28.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape26.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape23.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape22.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape21.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape20.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape19.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape18.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape17.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape16.iog" "lambert6SG.dsm" -na;
-connectAttr "PaverShape15.iog" "lambert6SG.dsm" -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver09|PaverShape9.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver14|PaverShape14.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver12|PaverShape12.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver13|PaverShape13.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver11|PaverShape11.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver10|PaverShape10.iog" "lambert6SG.dsm"
-		 -na;
-connectAttr "|Bricks|PaverRow05|group1|Paver05|PaverShape5.iog" "lambert6SG.dsm"
-		 -na;
 connectAttr "lambert6SG.msg" "materialInfo8.sg";
 connectAttr "aiStandardSurface5.msg" "materialInfo8.m";
 connectAttr "aiStandardSurface5.msg" "materialInfo8.t" -na;
@@ -170928,9 +170907,53 @@ connectAttr "blinn2.msg" "materialInfo12.m";
 connectAttr "place2dTexture1.o" "water1.uv";
 connectAttr "place2dTexture1.ofs" "water1.fs";
 connectAttr "water1.oa" "bump2d1.bv";
-connectAttr "Bricks1.oc" "lambert10SG.ss";
+connectAttr "aiStandardSurface6.out" "lambert10SG.ss";
+connectAttr "|Bricks|PaverRow05|group2|Paver09|PaverShape9.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group2|Paver14|PaverShape14.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group2|Paver12|PaverShape12.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group2|Paver13|PaverShape13.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group2|Paver11|PaverShape11.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group2|Paver10|PaverShape10.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group2|Paver05|PaverShape5.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "PaverShape32.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape31.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape30.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape29.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape28.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape26.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape23.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape22.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape21.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape20.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape19.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape18.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape17.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape16.iog" "lambert10SG.dsm" -na;
+connectAttr "PaverShape15.iog" "lambert10SG.dsm" -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver09|PaverShape9.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver14|PaverShape14.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver12|PaverShape12.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver13|PaverShape13.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver11|PaverShape11.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver10|PaverShape10.iog" "lambert10SG.dsm"
+		 -na;
+connectAttr "|Bricks|PaverRow05|group1|Paver05|PaverShape5.iog" "lambert10SG.dsm"
+		 -na;
 connectAttr "lambert10SG.msg" "materialInfo13.sg";
-connectAttr "Bricks1.msg" "materialInfo13.m";
+connectAttr "aiStandardSurface6.msg" "materialInfo13.m";
+connectAttr "aiStandardSurface6.msg" "materialInfo13.t" -na;
 connectAttr "lambert11.oc" "lambert11SG.ss";
 connectAttr "lambert11SG.msg" "materialInfo14.sg";
 connectAttr "lambert11.msg" "materialInfo14.m";
@@ -171245,6 +171268,8 @@ connectAttr "place2dTexture10.ofs" "file9.fs";
 connectAttr "file9.oa" "bump2d3.bv";
 connectAttr "bump2d1.o" "aiStandardSurface5.n";
 connectAttr "file10.oc" "aiStandardSurface5.base_color";
+connectAttr "file11.oa" "aiStandardSurface5.diffuse_roughness";
+connectAttr "file12.oa" "aiStandardSurface5.metalness";
 connectAttr ":defaultColorMgtGlobals.cme" "file10.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "file10.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "file10.cmcp";
@@ -171267,6 +171292,96 @@ connectAttr "place2dTexture11.vt3" "file10.vt3";
 connectAttr "place2dTexture11.vc1" "file10.vc1";
 connectAttr "place2dTexture11.o" "file10.uv";
 connectAttr "place2dTexture11.ofs" "file10.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "file11.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file11.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file11.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file11.ws";
+connectAttr "place2dTexture12.c" "file11.c";
+connectAttr "place2dTexture12.tf" "file11.tf";
+connectAttr "place2dTexture12.rf" "file11.rf";
+connectAttr "place2dTexture12.mu" "file11.mu";
+connectAttr "place2dTexture12.mv" "file11.mv";
+connectAttr "place2dTexture12.s" "file11.s";
+connectAttr "place2dTexture12.wu" "file11.wu";
+connectAttr "place2dTexture12.wv" "file11.wv";
+connectAttr "place2dTexture12.re" "file11.re";
+connectAttr "place2dTexture12.of" "file11.of";
+connectAttr "place2dTexture12.r" "file11.ro";
+connectAttr "place2dTexture12.n" "file11.n";
+connectAttr "place2dTexture12.vt1" "file11.vt1";
+connectAttr "place2dTexture12.vt2" "file11.vt2";
+connectAttr "place2dTexture12.vt3" "file11.vt3";
+connectAttr "place2dTexture12.vc1" "file11.vc1";
+connectAttr "place2dTexture12.o" "file11.uv";
+connectAttr "place2dTexture12.ofs" "file11.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file12.ws";
+connectAttr "place2dTexture13.c" "file12.c";
+connectAttr "place2dTexture13.tf" "file12.tf";
+connectAttr "place2dTexture13.rf" "file12.rf";
+connectAttr "place2dTexture13.mu" "file12.mu";
+connectAttr "place2dTexture13.mv" "file12.mv";
+connectAttr "place2dTexture13.s" "file12.s";
+connectAttr "place2dTexture13.wu" "file12.wu";
+connectAttr "place2dTexture13.wv" "file12.wv";
+connectAttr "place2dTexture13.re" "file12.re";
+connectAttr "place2dTexture13.of" "file12.of";
+connectAttr "place2dTexture13.r" "file12.ro";
+connectAttr "place2dTexture13.n" "file12.n";
+connectAttr "place2dTexture13.vt1" "file12.vt1";
+connectAttr "place2dTexture13.vt2" "file12.vt2";
+connectAttr "place2dTexture13.vt3" "file12.vt3";
+connectAttr "place2dTexture13.vc1" "file12.vc1";
+connectAttr "place2dTexture13.o" "file12.uv";
+connectAttr "place2dTexture13.ofs" "file12.fs";
+connectAttr "file13.oc" "aiStandardSurface6.specular_color";
+connectAttr "file14.oc" "aiStandardSurface6.base_color";
+connectAttr ":defaultColorMgtGlobals.cme" "file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file13.ws";
+connectAttr "place2dTexture14.c" "file13.c";
+connectAttr "place2dTexture14.tf" "file13.tf";
+connectAttr "place2dTexture14.rf" "file13.rf";
+connectAttr "place2dTexture14.mu" "file13.mu";
+connectAttr "place2dTexture14.mv" "file13.mv";
+connectAttr "place2dTexture14.s" "file13.s";
+connectAttr "place2dTexture14.wu" "file13.wu";
+connectAttr "place2dTexture14.wv" "file13.wv";
+connectAttr "place2dTexture14.re" "file13.re";
+connectAttr "place2dTexture14.of" "file13.of";
+connectAttr "place2dTexture14.r" "file13.ro";
+connectAttr "place2dTexture14.n" "file13.n";
+connectAttr "place2dTexture14.vt1" "file13.vt1";
+connectAttr "place2dTexture14.vt2" "file13.vt2";
+connectAttr "place2dTexture14.vt3" "file13.vt3";
+connectAttr "place2dTexture14.vc1" "file13.vc1";
+connectAttr "place2dTexture14.o" "file13.uv";
+connectAttr "place2dTexture14.ofs" "file13.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "file14.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file14.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file14.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file14.ws";
+connectAttr "place2dTexture15.c" "file14.c";
+connectAttr "place2dTexture15.tf" "file14.tf";
+connectAttr "place2dTexture15.rf" "file14.rf";
+connectAttr "place2dTexture15.mu" "file14.mu";
+connectAttr "place2dTexture15.mv" "file14.mv";
+connectAttr "place2dTexture15.s" "file14.s";
+connectAttr "place2dTexture15.wu" "file14.wu";
+connectAttr "place2dTexture15.wv" "file14.wv";
+connectAttr "place2dTexture15.re" "file14.re";
+connectAttr "place2dTexture15.of" "file14.of";
+connectAttr "place2dTexture15.r" "file14.ro";
+connectAttr "place2dTexture15.n" "file14.n";
+connectAttr "place2dTexture15.vt1" "file14.vt1";
+connectAttr "place2dTexture15.vt2" "file14.vt2";
+connectAttr "place2dTexture15.vt3" "file14.vt3";
+connectAttr "place2dTexture15.vc1" "file14.vc1";
+connectAttr "place2dTexture15.o" "file14.uv";
+connectAttr "place2dTexture15.ofs" "file14.fs";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
@@ -171301,7 +171416,7 @@ connectAttr "LeafOrange.msg" ":defaultShaderList1.s" -na;
 connectAttr "LeafRed.msg" ":defaultShaderList1.s" -na;
 connectAttr "GrassY.msg" ":defaultShaderList1.s" -na;
 connectAttr "blinn2.msg" ":defaultShaderList1.s" -na;
-connectAttr "Bricks1.msg" ":defaultShaderList1.s" -na;
+connectAttr "aiStandardSurface6.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert11.msg" ":defaultShaderList1.s" -na;
 connectAttr "aiStandardSurface1.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert12.msg" ":defaultShaderList1.s" -na;
@@ -171322,6 +171437,10 @@ connectAttr "place2dTexture9.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture10.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "bump2d3.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture11.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture12.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture13.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture14.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture15.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "aiSkyDomeLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "|LampLight|LampLightShape.ltd" ":lightList1.l" -na;
@@ -171339,6 +171458,10 @@ connectAttr "file7.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file8.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file9.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file10.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file11.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file14.msg" ":defaultTextureList1.tx" -na;
 connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "|LampLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "BenchLight.iog" ":defaultLightSet.dsm" -na;
