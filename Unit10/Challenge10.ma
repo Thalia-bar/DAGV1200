@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge10.ma
-//Last modified: Sun, Nov 10, 2024 09:53:04 PM
+//Last modified: Sun, Nov 10, 2024 10:12:31 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "45CBDED1-409F-4151-0035-70AF308DB808";
+fileInfo "UUID" "8F222DCA-4A15-6CE8-34CD-BAA912C4FDA3";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EF72068D-4BAE-EC05-4F7F-8BA535ADE4B4";
@@ -170730,12 +170730,13 @@ createNode place2dTexture -n "place2dTexture17";
 	rename -uid "362C01B4-48A1-387E-67B7-BCA77CFC43D9";
 createNode file -n "file17";
 	rename -uid "06C772EE-4085-BD66-1938-97B8BB700993";
-	setAttr ".ail" yes;
-	setAttr ".cs" -type "string" "sRGB";
+	setAttr ".ftn" -type "string" "C:/Users/Thalia/OneDrive/Desktop/DAGV12000_02/DAGV1200/Unit10/challenge10_textures/brick_StoneGrey_Normal.png";
+	setAttr ".cs" -type "string" "Raw";
 createNode place2dTexture -n "place2dTexture18";
 	rename -uid "13A05D5B-4549-A22A-3CC0-F5AF1EE6E509";
 createNode bump2d -n "bump2d4";
 	rename -uid "CDB18BD6-435A-A00A-70BE-CF96F4516A0F";
+	setAttr ".vc1" -type "float3" 0 2.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 select -ne :time1;
 	setAttr ".o" 57;
