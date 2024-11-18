@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge11.ma
-//Last modified: Sun, Nov 17, 2024 09:53:47 PM
+//Last modified: Sun, Nov 17, 2024 10:26:08 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -11,23 +11,23 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "94CCE6E1-4DDF-315D-5BF7-78B7211004B8";
+fileInfo "UUID" "2834658A-48AE-CD2F-24CF-1A843281D7D4";
 createNode transform -s -n "persp";
 	rename -uid "7BC43E54-4B31-514D-99FF-A890E24A102F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 13.276941838768012 3.1146044344954347 5.8608973721148274 ;
-	setAttr ".r" -type "double3" -28.189865974868962 50.242858557766596 -5.4705545394342354e-14 ;
-	setAttr ".rp" -type "double3" -8.8817841970012523e-16 4.4408920985006262e-16 0 ;
-	setAttr ".rpt" -type "double3" 2.6194961429066503e-15 4.6719474783401887e-15 6.7048558313822324e-15 ;
+	setAttr ".t" -type "double3" 11.554079938774095 0.45879752144739494 3.5997003879415064 ;
+	setAttr ".r" -type "double3" -10.451231040961094 67.814312597581846 -3.2638611296858016e-13 ;
+	setAttr ".rp" -type "double3" 6.6613381477509392e-16 -4.4408920985006262e-16 1.7763568394002505e-15 ;
+	setAttr ".rpt" -type "double3" -3.5764472724742228e-16 6.8136454551552705e-15 7.1541118793465528e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "03D44601-402A-E2A8-3186-908854EAB7F6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 15.823266685117773;
+	setAttr ".coi" 12.26126194474327;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 2.5554609289373804 -4.3602257242253994 -3.0583251156792937 ;
+	setAttr ".tp" -type "double3" 0.38893957297262816 -1.7653774171234549 -0.95345576270757126 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8D0905DB-452F-5344-265E-F69E91F6AC6D";
@@ -229,30 +229,63 @@ createNode mesh -n "potShape" -p "pot";
 		8.3179472e-16 -2.6252274e-15 -0.58104318 8.3179472e-16;
 createNode transform -n "pPlane1";
 	rename -uid "ADB6B88B-4D31-7217-CFE5-AB80970EDE60";
-	setAttr ".t" -type "double3" 9.5671447300378087 0 2.3782785943786044 ;
+	setAttr ".t" -type "double3" 9.5671447300378087 0.13878868789720111 2.3782785943786044 ;
+	setAttr ".rp" -type "double3" -0.29609203338623047 0.011925449594855309 0.1985098123550415 ;
+	setAttr ".sp" -type "double3" -0.29609203338623047 0.011925449594855309 0.1985098123550415 ;
 createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	rename -uid "62DD1192-4769-336E-C23D-8D946D8A45E0";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5000000074505806 0.5000000074505806 ;
+	setAttr ".pv" -type "double2" 0.40000000596046448 0.063796363770961761 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 72 ".pt[36:71]" -type "float3"  0 -0.15032084 0 0 -0.15032084 
-		0 0 -0.17739505 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 
-		0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 
-		-0.15032084 0 0 -0.15032084 0 0 -0.17739505 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 
-		0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.17739505 0 0 -0.15032084 0 
-		0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 
-		-0.17739505 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 
-		0 0 -0.15032084 0 0 -0.15032084 0;
+	setAttr -s 176 ".pt";
+	setAttr ".pt[0:165]" -type "float3"  0 -0.033972669 0 0 -0.035004839 0 0 
+		-0.036221791 0 0 -0.036663473 0 0 -0.035004839 0 0 -0.036058858 0 0 -0.036820859 
+		0 0 -0.037535749 0 0 -0.035754599 0 0 -0.036820859 0 0 -0.037594795 0 0 -0.038059637 
+		0 0 -0.036586218 0 0 -0.037281957 0 0 -0.038059637 0 0 -0.040782075 0 0 -0.033972669 
+		0 0 -0.035004839 0 0 -0.036207061 0 0 -0.036663473 0 0 -0.035004839 0 0 -0.036061261 
+		0 0 -0.036820859 0 0 -0.037520654 0 0 -0.035739992 0 0 -0.036820859 0 0 -0.037594795 
+		0 0 -0.038059637 0 0 -0.036586218 0 0 -0.040913068 0 0 -0.03283022 0 0 -0.032911438 
+		0 0 -0.033117965 0 0 -0.033356819 0 0 -0.033503659 0 0 -0.033356819 0 0 -0.033212911 
+		0 0 -0.033160362 0 0 -0.033018783 0 0 -0.033069521 0 0 -0.033212911 0 0 -0.033356819 
+		0 0 -0.034351148 0 0 -0.034194354 0 0 -0.034081716 0 0 -0.034043074 0 0 -0.035375785 
+		0 0 -0.035276476 0 0 -0.035205655 0 0 -0.035182323 0 0 -0.036525875 0 0 -0.036472864 
+		0 0 -0.03643601 0 0 -0.03643601 0 0 -0.036902696 0 0 -0.036873542 0 0 -0.036873542 
+		0 0 -0.036873542 0 0 -0.037452079 0 0 -0.037452079 0 0 -0.037452079 0 0 -0.037452079 
+		0 0 -0.033786457 0 0 -0.03382523 0 0 -0.033938188 0 0 -0.034081716 0 0 -0.037964664 
+		0 0 -0.037964664 0 0 -0.037964664 0 0 -0.037964664 0 0 -0.034610804 0 0 -0.034640275 
+		0 0 -0.034727931 0 0 -0.03485046 0 0 -0.038248561 0 0 -0.038297009 0 0 -0.038334228 
+		0 0 -0.038334228 0 0 -0.035465438 0 0 -0.035485558 0 0 -0.035547655 0 0 -0.03563508 
+		0 0 -0.056361426 0 0 -0.059702277 0 0 -0.062905714 0 0 -0.064281225 0 0 -0.036789551 
+		0 0 -0.036820859 0 0 -0.036820859 0 0 -0.036873542 0 0 -0.0362982 0 0 -0.036221791 
+		0 0 -0.036207061 0 0 -0.036207061 0 0 -0.037594795 0 0 -0.037594795 0 0 -0.037594795 
+		0 0 -0.037623998 0 0 -0.038227569 0 0 -0.038227569 0 0 -0.038227569 0 0 -0.038189396 
+		0 0 -0.058549479 0 0 -0.057826802 0 0 -0.05656036 0 0 -0.055292893 0 0 -0.093945131 
+		0 0 -0.099421985 0 0 -0.10102534 0 0 -0.033297878 -0.040929459 0 -0.032911438 0 0 
+		-0.03283022 0 0 -0.033629648 -0.040929459 0 -0.033212911 0 0 -0.033224326 0 0 -0.033069521 
+		0 0 -0.033018783 0 0 -0.034466006 -0.040929459 0 -0.034081716 0 0 -0.034043074 0 
+		0 -0.035547655 -0.040929459 0 -0.035205655 0 0 -0.035182323 0 0 -0.036710743 -0.040929459 
+		0 -0.03643601 0 0 -0.03643601 0 0 -0.037093762 -0.040929459 0 -0.036873542 0 0 -0.036873542 
+		0 0 -0.037452079 0 0 -0.037452079 0 0 -0.037452079 0 0 -0.033938188 0 0 -0.03382523 
+		0 0 -0.033786457 0 0 -0.037964664 0 0 -0.037964664 0 0 -0.037964664 0 0 -0.034742229 
+		0 0 -0.034640275 0 0 -0.034610804 0 0 -0.038297009 0 0 -0.038334228 0 0 -0.038351178 
+		0 0 -0.035561312 0 0 -0.035485558 0 0 -0.035465438 0 0 -0.063692257 0 0 -0.064070307 
+		0 0 -0.064281225 0 0 -0.036255881 0 0 -0.036207061 0 0 -0.036207061 0 0 -0.098235957 
+		0 0 -0.10042395 0 1.8626451e-09 -0.10102534 0 0 -0.036873542 0 0 -0.036820859 0 0 
+		-0.036789551 0 0 -0.037623998 0 0 -0.037594795 0 0 -0.037594795 0 0 -0.038227569 
+		0 0 -0.038227569 0 0 -0.038227569 0 0 -0.058289926 0;
+	setAttr ".pt[166:175]" 0 -0.058472149 0 0 -0.058549479 0 0 -0.037340131 0 
+		0 -0.037181668 0 0 -0.03723954 0 0 -0.037281957 0 0 -0.038059637 0 0 -0.038059637 
+		0 0 -0.038022604 0 0 -0.038098156 0;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "644A22C7-4C41-F6E2-232D-92B9E1FB822C";
-	setAttr -s 7 ".lnk";
-	setAttr -s 7 ".slnk";
+	setAttr -s 8 ".lnk";
+	setAttr -s 8 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "C7F80B5F-404D-FD84-80B5-D583AE6E628F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
@@ -441,6 +474,54 @@ createNode polyTweak -n "polyTweak1";
 	setAttr ".tk[31]" -type "float3" 0.088579886 0 0.14589623 ;
 	setAttr ".tk[32]" -type "float3" 0.039079361 0 0.062526971 ;
 	setAttr ".tk[33]" -type "float3" 0.0052105803 0 0.026052909 ;
+createNode phong -n "leaf_color";
+	rename -uid "82FA8E85-4F25-CBAB-CCAC-8E9EEE451CC2";
+	setAttr ".c" -type "float3" 0.16389036 0.204 0.064463995 ;
+createNode shadingEngine -n "phong1SG";
+	rename -uid "122966F2-4055-C6D7-498E-D58891A933AE";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo6";
+	rename -uid "87C8FE68-4AC3-2EC1-0FF2-E6AA070A7FE6";
+createNode polyBevel3 -n "polyBevel1";
+	rename -uid "5FE14B63-4C8F-948A-F106-A3B25C10ED31";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 18 "e[62]" "e[66]" "e[68]" "e[72]" "e[76]" "e[80]" "e[82]" "e[87]" "e[95]" "e[100]" "e[108]" "e[113]" "e[121]" "e[126:127]" "e[130]" "e[133]" "e[136]" "e[138:139]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 9.5671447300378087 0.13878868789720111 2.3782785943786044 1;
+	setAttr ".ws" yes;
+	setAttr ".oaf" yes;
+	setAttr ".f" 1;
+	setAttr ".sg" 3;
+	setAttr ".at" 180;
+	setAttr ".sn" yes;
+	setAttr ".mv" yes;
+	setAttr ".mvt" 0.0001;
+	setAttr ".sa" 30;
+createNode polyTweak -n "polyTweak2";
+	rename -uid "B1AD2252-434A-49A5-BD20-0DA790DFE26C";
+	setAttr ".uopa" yes;
+	setAttr -s 72 ".tk[36:71]" -type "float3"  0 -0.15032084 0 0 -0.15032084
+		 0 0 -0.2268312 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0
+		 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0
+		 -0.15032084 0 0 -0.15032084 0 0 -0.2268312 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084
+		 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.2268312 0 0 -0.15032084 0
+		 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0
+		 -0.2268312 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084 0 0 -0.15032084
+		 0 0 -0.15032084 0 0 -0.19975699 0;
+createNode polyBevel3 -n "polyBevel2";
+	rename -uid "68007700-411C-28EC-E296-F3A52246B673";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 14 "e[0:2]" "e[4]" "e[6]" "e[8]" "e[10]" "e[12]" "e[21]" "e[23]" "e[32]" "e[34]" "e[43]" "e[45]" "e[54:59]" "e[81]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 9.5671447300378087 0.13878868789720111 2.3782785943786044 1;
+	setAttr ".ws" yes;
+	setAttr ".oaf" yes;
+	setAttr ".f" 1;
+	setAttr ".sg" 2;
+	setAttr ".at" 180;
+	setAttr ".sn" yes;
+	setAttr ".mv" yes;
+	setAttr ".mvt" 0.0001;
+	setAttr ".sa" 30;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -452,10 +533,10 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 7 ".st";
+	setAttr -s 8 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 10 ".s";
+	setAttr -s 11 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
@@ -463,7 +544,6 @@ select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -493,7 +573,7 @@ connectAttr "polyCube3.out" "sinkShape1.i";
 connectAttr "polyCube4.out" "drawersShape.i";
 connectAttr "polyCylinder1.out" "mirrorShape.i";
 connectAttr "polyCylinder2.out" "potShape.i";
-connectAttr "polyExtrudeFace2.out" "pPlaneShape1.i";
+connectAttr "polyBevel2.out" "pPlaneShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
@@ -501,6 +581,7 @@ relationship "link" ":lightLinker1" "blinn1SG.message" ":defaultLightSet.message
 relationship "link" ":lightLinker1" "lambert3SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "phong1SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
@@ -508,6 +589,7 @@ relationship "shadowLink" ":lightLinker1" "blinn1SG.message" ":defaultLightSet.m
 relationship "shadowLink" ":lightLinker1" "lambert3SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "phong1SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "polyCube1.out" "deleteComponent1.ig";
@@ -536,17 +618,27 @@ connectAttr "lambert5.msg" "materialInfo5.m";
 connectAttr "polyTweak1.out" "polyExtrudeFace2.ip";
 connectAttr "pPlaneShape1.wm" "polyExtrudeFace2.mp";
 connectAttr "polyPlane1.out" "polyTweak1.ip";
+connectAttr "leaf_color.oc" "phong1SG.ss";
+connectAttr "pPlaneShape1.iog" "phong1SG.dsm" -na;
+connectAttr "phong1SG.msg" "materialInfo6.sg";
+connectAttr "leaf_color.msg" "materialInfo6.m";
+connectAttr "polyTweak2.out" "polyBevel1.ip";
+connectAttr "pPlaneShape1.wm" "polyBevel1.mp";
+connectAttr "polyExtrudeFace2.out" "polyTweak2.ip";
+connectAttr "polyBevel1.out" "polyBevel2.ip";
+connectAttr "pPlaneShape1.wm" "polyBevel2.mp";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert5SG.pa" ":renderPartition.st" -na;
+connectAttr "phong1SG.pa" ":renderPartition.st" -na;
 connectAttr "BlueBathroom.msg" ":defaultShaderList1.s" -na;
 connectAttr "PorcelianWhite.msg" ":defaultShaderList1.s" -na;
 connectAttr "Wood.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert5.msg" ":defaultShaderList1.s" -na;
+connectAttr "leaf_color.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "mirrorShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of Challenge11.ma
